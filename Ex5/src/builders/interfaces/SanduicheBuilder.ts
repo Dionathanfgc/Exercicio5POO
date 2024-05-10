@@ -12,8 +12,15 @@ export default class SanduicheBuilder implements IBuilder{
     setSanduicheType(value: SanduicheType) {
         this.sanduiche.sanduicheType = value;
     }
-    setBread
-    setProtein
-    setSalad
-    addSauce
+    setBread(bread: Bread) {
+        this.sanduiche.bread = bread;
+    }
+    setProtein(protein: Protein) {
+        this.sanduiche.protein = protein;
+    }
+    setSalad(salad: Salad) {
+        this.sanduiche.salad = salad;
+    }
+    addSauces(sauce: Sauce) {
+        this.sanduiche.addSauces(sauce);
 }
